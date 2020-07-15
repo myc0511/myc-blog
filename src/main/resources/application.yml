@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: myc-blog
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: m37195818
+  freemarker:
+    charset: utf-8
+    suffix: .ftl
+    cache: true
+    content-type: text/html
+  mvc:
+    static-path-pattern: /static/**
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.myc.blog: debug
+  file:
